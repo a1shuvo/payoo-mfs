@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI CDN Setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo Mobile Banking</title>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen py-6 mx-auto bg-gray-200">
+        <nav>
+            <!-- Logo -->
+            <div class="flex justify-center">
+                <img class="w-24" src="./assets/payoo.png" alt="">
+            </div>
+        </nav>
+
+        <div>
+            <div class="hero flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <!-- Login Form -->
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold">Mobile Number</label>
+                            <input id="account-number" value="01847982121" type="number" class="input" placeholder="Enter Your Mobile Number" required />
+                            <label class="fieldset-label font-bold">4 Digit Pin</label>
+                            <input id="pin" value="1122" type="text" class="input" placeholder="Enter Your 4 Digit Pin" required />
+                            <div><a class="link link-hover">Forgot PIN?</a></div>
+                            <button id="login-btn" class="btn btn-primary mt-4">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Login Script -->
+    <script src="./script/login.js"></script>
+</body>
+
+</html>
