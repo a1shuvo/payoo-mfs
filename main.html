@@ -102,10 +102,10 @@
                         <input id="agent-number" value="01847982121" type="number" class="input"
                             placeholder="Enter Agent Account Number" required />
                         <label class="fieldset-label font-bold">Cashout Amount</label>
-                        <input id="amount" type="number" class="input" placeholder="Enter Cashout Amount"
+                        <input id="cashout-amount" type="number" class="input" placeholder="Enter Cashout Amount"
                             required />
                         <label class="fieldset-label font-bold">Pin Number</label>
-                        <input id="pin" value="1122" type="number" class="input" placeholder="Enter Your 4 Digit Pin"
+                        <input id="cashout-pin" value="1122" type="number" class="input" placeholder="Enter Your 4 Digit Pin"
                             required />
                         <button id="cashout-btn" class="btn btn-primary mt-4">Withdraw Money</button>
                     </fieldset>
@@ -116,21 +116,15 @@
         <!-- Transaction History Section -->
         <section id="transaction-history" class="mx-auto p-4 mt-4">
             <h2 class="font-bold text-xl py-4">Transaction History</h2>
-            <div>
-                <div class="bg-white flex justify-between items-center px-4 py-2 rounded-lg shadow-sm cursor-pointer">
-                    <img class="w-6" src="./assets/icons/wallet 1.png" alt="">
-                    <div>
-                        <h4>Add Money</h4>
-                        <p class="text-xs">Today 01:44 PM</p>
-                    </div>
-                    <p class="text-green-500 font-bold">$ 200</p>
-                </div>
+            <div class="space-y-2">
+                
             </div>
         </section>
     </div>
 
     <!-- Scripts -->
     <script src="./script/addMoney.js"></script>
+    <script src="./script/cashout.js"></script>
     <script src="./utilities/utilities.js"></script>
     <script src="./utilities/toggle.js"></script>
 
