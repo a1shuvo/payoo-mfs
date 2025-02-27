@@ -6,7 +6,9 @@ document.getElementById("cashout-btn").addEventListener("click", function (event
     const cashoutPin = parseInt(getInputValueByID("cashout-pin"));
     const mainBalance = parseFloat(getInnerTextByID("main-balance"));
 
-    if (agentNumber.length === 11 && cashoutPin === 1122 && cashoutAmount > 0) {
+   
+
+    if (agentNumber.length === 11 && cashoutPin === 1122 && cashoutAmount > 0 && mainBalance >= cashoutAmount) {
         const sum = mainBalance - cashoutAmount;
         setInnerText("main-balance", sum);
         setInputValue("cashout-amount", "");
